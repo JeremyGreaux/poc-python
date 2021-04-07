@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "py-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Jérémy Gréaux <jeremy.greaux@gmail.com>"]
+
+[tool.poetry.scripts]
+start = "uvicorn app:main --reload"
+start-dev = "app:main --reload"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pendulum = "^2.1.2"
+fastapi = "^0.63.0"
+typing = "^3.7.4"
+uvicorn = "^0.13.4"
+SQLAlchemy = "^1.4.6"
+alembic = "^1.5.8"
+psycopg2 = "^2.8.6"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
